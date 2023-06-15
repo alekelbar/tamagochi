@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamagochi</title>
+</head>
+
+<body>
+
+    <main id="main" class="main">
+        <div class="main-content">
+            <figure class="main-content__image">
+                <img loading="lazy" id="imageUrl" width="250px"
+                    src="https://images.emojiterra.com/google/android-12l/512px/1f971.png" />
+            </figure>
+
+            <div class="main-content__button0">
+                <button id="btn-jugar" class="btn btn-Jugar">Jugar</button>
+            </div>
+
+            <div class="main-content__button1">
+                <button id="btn-dormir" class="btn btn-dormir">Dormir</button>
+            </div>
+
+            <div class="main-content__button2">
+                <button id="btn-alimentar" class="btn btn-alimentar">Alimentar</button>
+            </div>
+
+            <div class="main-content__button3">
+                <button id="btn-como" class="btn btn-Como">¿Como estás?</button>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Scripts... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.2/socket.io.js"
+        integrity="sha512-jMNwWSmjje4fjYut9MBGKXw5FZA6D67NHAuC9szpjbbjg51KefquNfvn4DalCbGfkcv/jHsHnPo1o47+8u4biA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "button1 button2"
+    "button3 button4";
+  max-width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em 1em 1.5em;
+  text-transform: capitalize;
+  margin: 10px 0px;
+  border-radius: 8px;
+  border: none;
+}
+
+.main-content__image {
+  grid-area: header;
+}
+
+.main-content__button0 {
+  grid-area: button1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  /* background-color: red; */
+}
+
+.btn:hover {
+  background-color: palegreen;
+}
+
+.main-content__button1 {
+  grid-area: button2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: cyan; */
+}
+
+.main-content__button2 {
+  grid-area: button3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: blue; */
+}
+
+.main-content__button3 {
+  grid-area: button4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: magenta; */
+}
